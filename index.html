@@ -15,42 +15,42 @@
 
         <main class="container">
             <section id="balance">
-                <h2 class="sr-only">Balanço</h2>
+                <h2 class="sr-only">Balance</h2>
 
                 <div class="card">
                     <h3>
-                        <span>Entradas</span>
-                        <img src="assets/images/income.svg" alt="imagem de entradas" />
+                        <span>Incomes</span>
+                        <img src="assets/images/income.svg" alt="income image" />
                     </h3>
                     <p id="incomeDisplay">R$ 0,00</p>
                 </div>
                 <div class="card">
                     <h3>
-                        <span>Saídas</span>
-                        <img src="assets/images/expense.svg" alt="imagem de saídas" />
+                        <span>Expenses</span>
+                        <img src="assets/images/expense.svg" alt="expense image" />
                     </h3>
                     <p id="expenseDisplay">R$ 0,00</p>
                 </div>
                 <div class="card total">
                     <h3>
                         <span>Total</span>
-                        <img src="assets/images/total.svg" alt="imagem de total" />
+                        <img src="assets/images/total.svg" alt="total image" />
                     </h3>
                     <p id="totalDisplay">R$ 0,00</p>
                 </div>
             </section>
 
             <section id="transaction">
-                <h2 class="sr-only">Transações</h2>
+                <h2 class="sr-only">Transactions</h2>
 
-                <button onclick="Modal.open()">+ Nova Transação</button>
+                <button onclick="Modal.open()">+ New Transaction</button>
                 
                 <table id="data-table">
                     <thead>
                         <tr>
-                            <th>Descrição</th>
-                            <th>Valor</th>
-                            <th>Data</th>
+                            <th>Description</th>
+                            <th>Value</th>
+                            <th>Date</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -65,30 +65,30 @@
             <div class="modal">
                 <div class="modal-content">
                     <header>
-                        <h2>Nova Transação</h2>
+                        <h2>New Transaction</h2>
                     </header>
     
                     <main>
                         <form action="" onsubmit="Form.submit(event)">
                             <div class="input-group">
-                                <label class="sr-only" for="description">Descrição</label>
-                                <input id="description" type="text" name="description" placeholder="Descrição" />
+                                <label class="sr-only" for="description">Description</label>
+                                <input id="description" type="text" name="description" placeholder="Description" />
                             </div>
     
                             <div class="input-group">
-                                <label class="sr-only" for="amount">Valor</label>
+                                <label class="sr-only" for="amount">Value</label>
                                 <input id="amount" type="number" step="0.01" name="amount" placeholder="0,00" />
-                                <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
+                                <small class="help">Use the - (negative) sign for expenses and , (comma) for decimal places</small>
                             </div>
                             
                             <div class="input-group">
-                                <label class="sr-only" for="date">Data</label>
+                                <label class="sr-only" for="date">Date</label>
                                 <input id="date" type="date" name="date" />
                             </div>
     
                             <div class="input-group actions">
-                                <button type="button" class="cancel" onclick="Modal.close()">Cancelar</button>
-                                <button type="submit">Salvar</button>
+                                <button type="button" class="cancel" onclick="Modal.close()">Cancel</button>
+                                <button type="submit">Save</button>
                             </div>
                         </form>
                     </main>
